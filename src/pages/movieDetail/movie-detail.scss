@@ -1,0 +1,11 @@
+// base
+@import "../../assets/style/base/colors";
+@import "../../assets/style/base/fonts";
+@import "../../assets/style/base/layout";
+@import "../../assets/style/base/breakpoints";
+
+.movie-detail {
+  .banner.featured {
+    margin-top: 0;
+  }
+}

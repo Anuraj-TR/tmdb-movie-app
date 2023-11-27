@@ -1,0 +1,32 @@
+// base
+@import "../../../../assets/style/base/colors";
+@import "../../../../assets/style/base/fonts";
+@import "../../../../assets/style/base/layout";
+@import "../../../../assets/style/base/breakpoints";
+
+.header-nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__links {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    a {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 500;
+      color: $color-white;
+      text-align: center;
+      text-decoration: none;
+      text-transform: capitalize;
+      cursor: pointer;
+      padding: 8px;
+      margin: 0 8px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// base
+@import "../../assets/style/base/colors";
+@import "../../assets/style/base/fonts";
+@import "../../assets/style/base/layout";
+@import "../../assets/style/base/breakpoints";
+
+.card-list {
+  width: 100%;
+  padding: 40px 0;
+  &-wrap {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: $color-white;
+  }
+}

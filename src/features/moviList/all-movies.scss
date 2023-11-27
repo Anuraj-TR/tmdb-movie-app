@@ -1,0 +1,32 @@
+// base
+@import "../../assets/style/base/colors";
+@import "../../assets/style/base/fonts";
+@import "../../assets/style/base/layout";
+@import "../../assets/style/base/breakpoints";
+
+.movies {
+  &-card-wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    .card--loading,
+    .card {
+      width: calc(33.33% - 32px);
+      margin: 16px;
+    }
+  }
+}
+
+@include mobile {
+  .movies {
+    &-card-wrap {
+      margin: 0;
+      .card--loading,
+      .card {
+        width: 100%;
+        margin: 16px;
+      }
+    }
+  }
+}

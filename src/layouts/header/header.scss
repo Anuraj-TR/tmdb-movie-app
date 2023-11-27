@@ -1,0 +1,47 @@
+// base
+@import "../../assets/style/base/colors";
+@import "../../assets/style/base/fonts";
+@import "../../assets/style/base/layout";
+@import "../../assets/style/base/breakpoints";
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  &-wrap {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: brightness(0.7);
+    z-index: 10;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &--active {
+    background-color: $color-body;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+// base
+@import "../../../../assets/style/base/colors";
+@import "../../../../assets/style/base/colors";
+@import "../../../../assets/style/base/fonts";
+@import "../../../../assets/style/base/layout";
+@import "../../../../assets/style/base/breakpoints";
+
+.btn {
+  display: inline-flex;
+  padding: $spacer-2 $spacer-4;
+  background-color: $color-red;
+  cursor: pointer;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid $color-red;
+  transition: all 0.3s ease-in-out;
+  &__logo {
+    width: 16px;
+    height: 16px;
+    margin-right: $spacer-2;
+    svg {
+      width: 100%;
+      fill: $color-white;
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-white;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $color-white;
+
+    .btn__text {
+      color: $color-red;
+    }
+
+    .btn__logo {
+      svg {
+        fill: $color-red;
+        path {
+          stroke: $color-red;
+        }
+      }
+    }
+  }
+}
